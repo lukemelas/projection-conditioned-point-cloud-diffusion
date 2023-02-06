@@ -1,10 +1,15 @@
-#### Academic Website Project Template
+#### Website
 
 #### TODO:
 
 - [ ] Code
 - [ ] Gifs
 - [ ] Short video
+    - [ ] Rendering (in process)
+    - [ ] Script
+    - [ ] Recording
+    - [ ] Editing
+- [ ] Add website links to the paper
 
 Remember to edit `.env.production` with the correct path.
 

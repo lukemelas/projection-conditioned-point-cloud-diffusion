@@ -1,5 +1,5 @@
 // Project title
-export const title = "Projection-Conditioned Point Cloud Diffusion for Single-Image 3D Reconstruction"
+export const title = "PC2: Projection-Conditioned Point Cloud Diffusion for Single-Image 3D Reconstruction"
 
 // Short version of the abstract
 export const description = "We propose a novel method for single-image 3D reconstruction which generates a sparse point cloud via a conditional denoising diffusion process with a geometrically-consistent conditioning process which we call projection conditioning."
@@ -9,7 +9,7 @@ export const abstract = "Reconstructing the 3D shape of an object from a single 
 
 // Institutions
 export const institutions = {
-  1: "Oxford University",
+  1: "VGG Group, Oxford University",
 }
 
 // Authors
@@ -43,11 +43,11 @@ export const links = {
 }
 
 // Acknowledgements
-export const acknowledgements = "We thank xyz for abc..."
+export const acknowledgements = "L.M.K. is supported by the Rhodes Trust. A.V. and C.R. are supported by ERC-UNION-CoG-101001212. C.R. is also supported by VisualAI EP/T028572/1."
 
 // Citation
 export const citationId = "melaskyriazi2023projection"
-export const citationAuthors = "Luke Melas-Kyriazi and Christian Rupprecht and Iro Laina and Andrea Vedaldi"
+export const citationAuthors = "Luke Melas-Kyriazi and Christian Rupprecht and Andrea Vedaldi"
 export const citationYear = "2023"
 export const citationBooktitle = "Arxiv"
 

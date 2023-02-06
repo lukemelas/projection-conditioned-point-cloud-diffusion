@@ -1,11 +1,13 @@
-import { Heading, Wrap, Box, Container, Link as ChakraLink } from '@chakra-ui/react'
+import { Heading, Wrap, Box, Container, Text, Link as ChakraLink } from '@chakra-ui/react'
 import NextLink from "next/link"
 
 import { title, institutions, authors } from 'data'
 
 
 export const Title = () => (
-  <Heading fontSize="2xl" pt="3rem" maxW="60rem" textAlign="center">{title}</Heading>
+  <Heading fontWeight="light" fontSize="3xl" pt="3rem" maxW="60rem" textAlign="center">
+    <Text fontWeight="bold" as="span">PC<sup>2</sup></Text>: Projection-Conditioned Point Cloud Diffusion for Single-Image 3D Reconstruction
+  </Heading>
 )
 
 

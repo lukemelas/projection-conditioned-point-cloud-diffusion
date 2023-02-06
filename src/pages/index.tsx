@@ -32,22 +32,34 @@ const Index = () => (
     <Container w="100%" maxW="60rem" alignItems="left" pl="1rem" pr="1rem">
 
       {/* Abstract */}
-      <Heading fontSize="2xl" pb="1rem">Abstract</Heading>
+      <Heading fontWeight="light" fontSize="2xl" pb="1rem">Abstract</Heading>
       <Text pb="2rem">{abstract}</Text>
 
       {/* Example */}
-      <Heading fontSize="2xl" pb="1rem">Examples</Heading>
-      <img src={`${process.env.BASE_PATH || ""}/images/example.png`} />
-      <Text align="center" pt="0.5rem" pb="0.5rem" fontSize="small">This is a caption</Text>
+      <Heading fontWeight="light" fontSize="2xl" pb="1rem">Examples</Heading>
+      <img src={`${process.env.BASE_PATH || ""}/images/method-diagram-v3.png`} />
+      <Text margin="auto" pt="0.5rem" pb="0.5rem" fontSize="small" paddingBottom="2rem">
+      <Text fontWeight="bold" as="span">Method Diagram.</Text> <Text fontWeight="bold" as="span">PC<sup>2</sup></Text> reconstructs a colored point cloud from a single input image along with its camera pose.
+        The method contains two sub-parts, both of which utilize our model projection conditioning method.
+        First, we gradually denoise a set of points into the shape of an object.
+        At each step in the diffusion process, we project image features onto the partially-denoised point cloud from the given camera pose, augmenting each point with a set of neural features.
+        This step makes the diffusion process conditional on the image in a geometrically-consistent manner, enabling high-quality shape reconstruction.
+        Second, we predict the color of each point using a model based on the same projection procedure.
+        Hi
+      </Text>
 
-      {/* Another Section */}
-      <Heading fontSize="2xl" pt="2rem" pb="1rem" id="dataset">Another Section</Heading>
-      <Text >
-        Here we have...
+      {/* Example */}
+      <img src={`${process.env.BASE_PATH || ""}/images/splash-figure.png`} />
+      <Text margin="auto" pt="0.5rem" pb="0.5rem" fontSize="small" paddingBottom="2rem">
+        <Text fontWeight="bold" as="span">PC<sup>2</sup></Text> performs single-image 3D point cloud reconstruction by gradually diffusing an initially random point cloud to align the with input image. It has been trained through simple, sparse COLMAP supervision from videos.
+      </Text>
+      <img src={`${process.env.BASE_PATH || ""}/images/results-figure-v3.png`} />
+      <Text margin="auto" pt="0.5rem" pb="0.5rem" fontSize="small">
+        Examples on three real-world categories from Co3D: toytrucks, teddy bears, and hydrants.
       </Text>
 
       {/* Citation */}
-      <Heading fontSize="2xl" pt="2rem" pb="1rem">Citation</Heading>
+      <Heading fontWeight="light" fontSize="2xl" pt="2rem" pb="1rem">Citation</Heading>
       <Code p="0.5rem" borderRadius="5px" overflow="scroll" whiteSpace="nowrap">  {/*  fontFamily="monospace" */}
         @inproceedings&#123; <br />
           &nbsp;&nbsp;&nbsp;&nbsp;{citationId}, <br />
@@ -59,7 +71,7 @@ const Index = () => (
       </Code>
 
       {/* Acknowledgements */}
-      <Heading fontSize="2xl" pt="2rem" pb="1rem">Acknowledgements</Heading>
+      <Heading fontWeight="light" fontSize="2xl" pt="2rem" pb="1rem">Acknowledgements</Heading>
       <Text >
         {acknowledgements}
       </Text>
