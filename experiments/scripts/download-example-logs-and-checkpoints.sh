@@ -1,0 +1,1 @@
+echo "Checkpoints will be uploaded soon!"

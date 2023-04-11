@@ -1,0 +1,14 @@
+accelerate
+diffusers
+hydra-core
+imageio
+ninja
+opencv-python-headless
+plotly
+rich
+scipy
+timm
+torch-ema
+tqdm
+transformers
+wandb
